@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+  .custom-card {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+  .custom-card header {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .custom-card p {
+    color: #555;
+    line-height: 1.6;
+  }
+</style>
+
+<section class="section-content padding-y">
+  <div class="container">
+    <div class="row">
+      {% include 'includes/dashboard_sidebar.html' %}
+      <!--  -->
+      <main class="col-md-9">
+        <article class="card mb-3 custom-card">
+          <header class="card-header text-center">
+            Return and Refund Policies
+          </header>
+          <div class="card-body text-center">
+            <p>
+              We want you to be completely satisfied with your purchase. If for any reason you are not happy with your order, you may request a return or exchange within <strong>14 days</strong> of receiving your item.
+            </p>
+            <p>
+              To be eligible for a return, items must be unused, in their original packaging, and in the same condition that you received them. Certain items such as personalized or clearance products may not be eligible for return.
+            </p>
+          </div>
+        </article>
+
+        <article class="card mb-3 custom-card">
+          <div class="card-body text-center">
+            <p>
+              Once we receive and inspect your returned item, we will notify you of the status of your refund. Approved refunds will be processed within <strong>5–7 business days</strong> and credited back to your original method of payment.
+            </p>
+            <p>
+              Please note that shipping costs are non-refundable. If you received free shipping on your original order, the cost of return shipping may be deducted from your refund. For exchanges, we will cover the cost of sending the replacement item back to you.
+            </p>
+            <p>
+              If you have any questions or need assistance with your return, please contact our customer support team at <a href="mailto:support@store.com">support@store.com</a>.
+            </p>
+          </div>
+        </article>
+
+      </main>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}
